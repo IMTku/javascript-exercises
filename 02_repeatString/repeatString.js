@@ -12,6 +12,7 @@
 // ```
 //repeatString('hey', 3) // returns 'heyheyhey'
 const repeatString = function(str1,num) {
+    if(num<0)return"ERROR";
     let str2="";//not have space
     for(let i=0;i<num;i++)
         str2+=str1;

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const palindromes = function (str) {
+    let cleaned_str=str.replace(/[\s\W]/g,"").toUpperCase();
+    for(let i=0;i<(Math.floor((cleaned_str.length-1)/2));i++){
+        if(cleaned_str[i]===cleaned_str[cleaned_str.length-1-i]){return true;}
+        else return false;
+    }
+};
+    str1='ZZZZ car, a man, a maracaz.';
+    palindromes(str1);
+    </script>
+</body>
+</html>
